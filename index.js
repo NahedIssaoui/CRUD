@@ -11,8 +11,8 @@ connect();
 app.post("/person", (req, res) => {
   const newPerson = new Person({
     name: 'nahed',
-    age: 29,
-    email: 'nahed@gmail.com',
+    age: 27,
+    favoriteFoods: ['Pasta', 'Pizza']
   });
 
   newPerson.save()
